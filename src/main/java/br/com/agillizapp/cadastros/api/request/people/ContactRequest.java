@@ -1,6 +1,5 @@
-package br.com.agillizapp.cadastros.api.request;
+package br.com.agillizapp.cadastros.api.request.people;
 
-import br.com.agillizapp.cadastros.domain.services.dtos.PersonDTO;
 import lombok.*;
 
 @Builder

@@ -1,7 +1,7 @@
-package br.com.agillizapp.cadastros.domain.services;
+package br.com.agillizapp.cadastros.domain.services.banks;
 
-import br.com.agillizapp.cadastros.api.request.BankRequest;
-import br.com.agillizapp.cadastros.domain.services.dtos.BankDTO;
+import br.com.agillizapp.cadastros.api.request.banks.BankRequest;
+import br.com.agillizapp.cadastros.domain.services.dtos.banks.BankDTO;
 import br.com.agillizapp.cadastros.domain.services.dtos.PageDTO;
 import br.com.agillizapp.cadastros.domain.services.filter.BankFilter;
 

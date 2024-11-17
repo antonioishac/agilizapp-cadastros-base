@@ -1,11 +1,11 @@
-package br.com.agillizapp.cadastros.domain.services.impl;
+package br.com.agillizapp.cadastros.domain.services.impl.people;
 
-import br.com.agillizapp.cadastros.api.request.PersonRequest;
+import br.com.agillizapp.cadastros.api.request.people.PersonRequest;
 import br.com.agillizapp.cadastros.domain.repositories.PersonRepository;
-import br.com.agillizapp.cadastros.domain.services.IPersonService;
-import br.com.agillizapp.cadastros.domain.services.dtos.PersonDTO;
-import br.com.agillizapp.cadastros.domain.services.mappers.PersonMapper;
-import br.com.agillizapp.cadastros.domain.services.mappers.PersonRequestMapper;
+import br.com.agillizapp.cadastros.domain.services.people.IPersonService;
+import br.com.agillizapp.cadastros.domain.services.dtos.people.PersonDTO;
+import br.com.agillizapp.cadastros.domain.services.mappers.people.PersonMapper;
+import br.com.agillizapp.cadastros.domain.services.mappers.people.PersonRequestMapper;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 

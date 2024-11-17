@@ -1,8 +1,8 @@
-package br.com.agillizapp.cadastros.api.controller;
+package br.com.agillizapp.cadastros.api.controller.people;
 
-import br.com.agillizapp.cadastros.api.request.PersonRequest;
-import br.com.agillizapp.cadastros.domain.services.IPersonService;
-import br.com.agillizapp.cadastros.domain.services.dtos.PersonDTO;
+import br.com.agillizapp.cadastros.api.request.people.PersonRequest;
+import br.com.agillizapp.cadastros.domain.services.people.IPersonService;
+import br.com.agillizapp.cadastros.domain.services.dtos.people.PersonDTO;
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.media.Content;
 import io.swagger.v3.oas.annotations.media.Schema;

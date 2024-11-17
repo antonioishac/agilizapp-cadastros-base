@@ -16,7 +16,7 @@ CREATE TABLE tb_agencia_banco (
   `cep` varchar(8) DEFAULT NULL,
   `municipio_ibge` int(10) unsigned DEFAULT NULL,
   `uf` char(2) DEFAULT NULL,
-  `telefone` varchar(10) DEFAULT NULL,
+  `telefone` varchar(15) DEFAULT NULL,
   `gerente` varchar(30) DEFAULT NULL,
   `contato` varchar(30) DEFAULT NULL,
   `obs` text,

@@ -1,4 +1,4 @@
-package br.com.agillizapp.cadastros.domain.services.dtos;
+package br.com.agillizapp.cadastros.domain.services.dtos.banks;
 
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;

@@ -7,18 +7,11 @@ import org.springframework.stereotype.Service;
 
 @Service
 @RequiredArgsConstructor
-public class BankValidator {
+public class AgencyBankValidator {
 
-    public void existsCodeBank(Boolean exists) {
+    public void existsCodeAgencyBank(Boolean exists) {
         if (exists) {
-            throw new ApiException(ExceptionCodeEnum.ERROR_NEW_BANK_CODE_EXISTS);
+            throw new ApiException(ExceptionCodeEnum.ERROR_NEW_AGENCY_BANK_CODE_EXISTS);
         }
     }
-
-    public void notExistCodeBank(Boolean exists) {
-        if (!exists) {
-            throw new ApiException(ExceptionCodeEnum.ERROR_CODE_BANK_NOT_EXISTS);
-        }
-    }
-
 }

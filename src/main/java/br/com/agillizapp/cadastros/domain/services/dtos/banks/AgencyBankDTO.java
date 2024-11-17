@@ -1,18 +1,28 @@
-package br.com.agillizapp.cadastros.domain.services.dtos;
+package br.com.agillizapp.cadastros.domain.services.dtos.banks;
 
+import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import io.swagger.v3.oas.annotations.media.Schema;
+import lombok.*;
 
+@Builder
+@NoArgsConstructor
+@AllArgsConstructor
+@Getter
+@Setter
+@JsonInclude(JsonInclude.Include.NON_NULL)
 public class AgencyBankDTO {
 
     @JsonProperty("id")
-    @Schema(name = "id", description = "Código único da agencia", type = "int", example = "1")
+    @Schema(name = "id", description = "Id co banco", type = "int", example = "1")
     private Integer id;
-    private BankDTO bank;
 
     @JsonProperty("code")
-    @Schema(name = "code", description = "Código interno da agencia", type = "int", example = "123")
-    private Integer code;
+    @Schema(name = "code", description = "Código interno da agencia", example = "0542")
+    private String code;
+
+    @JsonProperty("bank")
+    private BankDTO bank;
 
     @JsonProperty("name")
     @Schema(name = "name", description = "Nome da agencia bancária", requiredMode = Schema.RequiredMode.REQUIRED, example = "Agencia central")

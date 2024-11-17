@@ -1,4 +1,4 @@
-package br.com.agillizapp.cadastros.domain.services.dtos;
+package br.com.agillizapp.cadastros.domain.services.dtos.people;
 
 import lombok.*;
 

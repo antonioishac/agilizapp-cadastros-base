@@ -1,7 +1,8 @@
-package br.com.agillizapp.cadastros.domain.services.mappers;
+package br.com.agillizapp.cadastros.domain.services.mappers.banks;
 
-import br.com.agillizapp.cadastros.api.request.BankRequest;
+import br.com.agillizapp.cadastros.api.request.banks.BankRequest;
 import br.com.agillizapp.cadastros.domain.repositories.entities.BankEntity;
+import br.com.agillizapp.cadastros.domain.services.mappers.ConverterMapper;
 import org.mapstruct.Mapper;
 
 @Mapper(componentModel = "spring")

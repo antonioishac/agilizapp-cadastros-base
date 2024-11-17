@@ -1,4 +1,4 @@
-package br.com.agillizapp.cadastros.api.request;
+package br.com.agillizapp.cadastros.api.request.people;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 import lombok.*;

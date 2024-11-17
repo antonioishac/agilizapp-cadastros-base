@@ -1,16 +1,16 @@
-package br.com.agillizapp.cadastros.domain.services.impl;
+package br.com.agillizapp.cadastros.domain.services.impl.banks;
 
 import br.com.agillizapp.cadastros.api.config.handler.exception.ApiException;
 import br.com.agillizapp.cadastros.api.config.handler.util.ExceptionCodeEnum;
-import br.com.agillizapp.cadastros.api.request.BankRequest;
+import br.com.agillizapp.cadastros.api.request.banks.BankRequest;
 import br.com.agillizapp.cadastros.domain.repositories.BankRepository;
 import br.com.agillizapp.cadastros.domain.repositories.entities.BankEntity;
-import br.com.agillizapp.cadastros.domain.services.IBankService;
-import br.com.agillizapp.cadastros.domain.services.dtos.BankDTO;
+import br.com.agillizapp.cadastros.domain.services.banks.IBankService;
+import br.com.agillizapp.cadastros.domain.services.dtos.banks.BankDTO;
 import br.com.agillizapp.cadastros.domain.services.dtos.PageDTO;
 import br.com.agillizapp.cadastros.domain.services.filter.BankFilter;
-import br.com.agillizapp.cadastros.domain.services.mappers.BankMapper;
-import br.com.agillizapp.cadastros.domain.services.mappers.BankRequestMapper;
+import br.com.agillizapp.cadastros.domain.services.mappers.banks.BankMapper;
+import br.com.agillizapp.cadastros.domain.services.mappers.banks.BankRequestMapper;
 import br.com.agillizapp.cadastros.domain.services.validators.BankValidator;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import jakarta.transaction.Transactional;

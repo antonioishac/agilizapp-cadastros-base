@@ -1,9 +1,9 @@
-package br.com.agillizapp.cadastros.api.controller;
+package br.com.agillizapp.cadastros.api.controller.banks;
 
 import br.com.agillizapp.cadastros.api.config.handler.dto.ResponseErrorDTO;
-import br.com.agillizapp.cadastros.api.request.BankRequest;
-import br.com.agillizapp.cadastros.domain.services.IBankService;
-import br.com.agillizapp.cadastros.domain.services.dtos.BankDTO;
+import br.com.agillizapp.cadastros.api.request.banks.BankRequest;
+import br.com.agillizapp.cadastros.domain.services.banks.IBankService;
+import br.com.agillizapp.cadastros.domain.services.dtos.banks.BankDTO;
 import br.com.agillizapp.cadastros.domain.services.dtos.PageDTO;
 import br.com.agillizapp.cadastros.domain.services.filter.BankFilter;
 import io.swagger.v3.oas.annotations.Operation;
