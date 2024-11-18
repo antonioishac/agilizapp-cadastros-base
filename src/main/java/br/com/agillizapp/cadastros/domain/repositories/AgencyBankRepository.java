@@ -12,6 +12,6 @@ import java.util.Optional;
 public interface AgencyBankRepository extends JpaRepository<AgencyBankEntity, Integer> {
 
     @Query("SELECT a FROM AgencyBankEntity a WHERE a.code = :code")
-    Optional<AgencyBankEntity> findAgencyBankByCode(@Param("code") String code);
+    Optional<AgencyBankEntity> findAgencyBankByCode(@Param("code") int code);
 
 }

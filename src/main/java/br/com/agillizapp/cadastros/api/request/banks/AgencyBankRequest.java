@@ -12,8 +12,8 @@ import lombok.*;
 public class AgencyBankRequest {
 
     @JsonProperty("code")
-    @Schema(name = "code", description = "Código interno da agencia", example = "0542")
-    private String code;
+    @Schema(name = "code", description = "Código interno da agencia", type = "int", example = "542")
+    private int code;
 
     @JsonProperty("codeBank")
     @Schema(name = "codeBank", description = "Código do banco", example = "033")

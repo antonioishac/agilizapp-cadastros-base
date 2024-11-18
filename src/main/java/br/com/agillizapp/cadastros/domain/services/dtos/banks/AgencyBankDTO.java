@@ -18,8 +18,8 @@ public class AgencyBankDTO {
     private Integer id;
 
     @JsonProperty("code")
-    @Schema(name = "code", description = "Código interno da agencia", example = "0542")
-    private String code;
+    @Schema(name = "code", description = "Código interno da agencia", type = "int", example = "542")
+    private int code;
 
     @JsonProperty("bank")
     private BankDTO bank;
