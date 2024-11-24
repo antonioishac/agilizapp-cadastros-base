@@ -21,6 +21,15 @@ public class PersonService implements IPersonService {
     public PersonDTO savePerson(PersonRequest request) {
 
         var personEntity = personRequestMapper.toEntity(request);
+
+        if (personEntity.getContacts() != null) {
+            personEntity.getContacts().forEach(c -> c.setPerson(personEntity));
+        }
+
+        if (personEntity.getAddresses() != null) {
+            personEntity.getAddresses().forEach(c -> c.setPerson(personEntity));
+        }
+
         var personEntitySave = repository.save(personEntity);
         return mapper.toDto(personEntitySave);
     }
